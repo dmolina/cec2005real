@@ -1,0 +1,2 @@
+include *.txt *.rst *.py
+recursive-include cec2005real *.rst *.py *.cpp *.c *.h *.pyx
