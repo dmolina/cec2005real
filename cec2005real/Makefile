@@ -115,19 +115,6 @@ cec2005/fast:
 	$(MAKE) -f CMakeFiles/cec2005.dir/build.make CMakeFiles/cec2005.dir/build
 .PHONY : cec2005/fast
 
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
 cec2005.o: cec2005.cc.o
 .PHONY : cec2005.o
 
@@ -200,30 +187,6 @@ srandom.cc.s:
 	$(MAKE) -f CMakeFiles/cec2005.dir/build.make CMakeFiles/cec2005.dir/srandom.cc.s
 .PHONY : srandom.cc.s
 
-test.o: test.cc.o
-.PHONY : test.o
-
-# target to build an object file
-test.cc.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cc.o
-.PHONY : test.cc.o
-
-test.i: test.cc.i
-.PHONY : test.i
-
-# target to preprocess a source file
-test.cc.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cc.i
-.PHONY : test.cc.i
-
-test.s: test.cc.s
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cc.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cc.s
-.PHONY : test.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,7 +196,6 @@ help:
 	@echo "... cec2005"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... cec2005.o"
 	@echo "... cec2005.i"
 	@echo "... cec2005.s"
@@ -243,9 +205,6 @@ help:
 	@echo "... srandom.o"
 	@echo "... srandom.i"
 	@echo "... srandom.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
 .PHONY : help
 
 
